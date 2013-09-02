@@ -7,6 +7,10 @@ Gomotion is a framework that uses the [WebSocket](https://en.wikipedia.org/wiki/
 * Frame collection happens concurrently
 * JSON comes back parsed and placed into structs for handling.
 
+## Docs
+
+http://godoc.org/github.com/whoisjake/gomotion
+
 ## To use
 
 In your $GOPATH:
