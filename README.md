@@ -2,7 +2,7 @@
 
 Gomotion is a framework that uses the [WebSocket](https://en.wikipedia.org/wiki/WebSocket) protocol to communicate with a [LeapMotion](https://www.leapmotion.com/) device.
 
-[![baby-gopher](https://raw2.github.com/drnic/babygopher-site/gh-pages/images/babygopher-badge.png)](http://www.babygopher.com)
+[![baby-gopher](https://raw2.github.com/drnic/babygopher-site/gh-pages/images/babygopher-badge.png)](http://www.babygopher.org)
 
 ## Features
 * Dead simple to use.
