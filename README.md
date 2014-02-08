@@ -38,7 +38,10 @@ import (
 func main() {
 	// Get a device.
 	runtime.GOMAXPROCS(runtime.NumCPU())
-	device := gomotion.GetDevice("ws://127.0.0.1:6437/v3.json")
+	device, err := gomotion.GetDevice("ws://127.0.0.1:6437/v3.json")
+	if err != nil {
+		log.Fatal(err)
+	}
 	device.Listen()
 	defer device.Close()
 	for frame := range device.Pipe {
