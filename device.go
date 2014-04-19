@@ -5,7 +5,6 @@ package gomotion
 import (
 	"code.google.com/p/go.net/websocket"
 	"net"
-	"fmt"
 )
 
 // A simple type to carry decode errors along rather than just dieing.
@@ -48,7 +47,6 @@ func (device *LeapMotionDevice) listenRead() {
 		if err := websocket.JSON.Receive(device.Connection, &frame.Frame); err != nil {
 			// Slightly way to avoid another variable in LeapMotionDevice. Works for me.
 			if _, ok := err.(*net.OpError); ok {
-				fmt.Println("Closed!")
 				close(device.Pipe)
 				return
 			}
